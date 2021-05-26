@@ -3,4 +3,5 @@ export function Trees({ name, id, age, location }) {
   this.id = id;
   this.age = age;
   this.location = location;
+  this.className = "Trees";
 }
