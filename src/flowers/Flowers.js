@@ -3,4 +3,5 @@ export function Flowers({ name, id, type, location }) {
   this.id = id;
   this.type = type;
   this.location = location;
+  this.className = "Flowers";
 }

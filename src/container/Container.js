@@ -42,6 +42,11 @@ export function containerMultimethod(array, file, writeStrFromFile) {
               writeStrFromFile(file, buildObjectFromStr(array[j]));
               writeStrFromFile(file, "Trees - Shrubs");
               break;
+            case "Flowers":
+              writeStrFromFile(file, buildObjectFromStr(array[i]));
+              writeStrFromFile(file, buildObjectFromStr(array[j]));
+              writeStrFromFile(file, "Trees - Flowers");
+              break;
           }
           break;
         case "Shrubs":
@@ -55,6 +60,30 @@ export function containerMultimethod(array, file, writeStrFromFile) {
               writeStrFromFile(file, buildObjectFromStr(array[i]));
               writeStrFromFile(file, buildObjectFromStr(array[j]));
               writeStrFromFile(file, "Shrubs - Shrubs");
+              break;
+            case "Flowers":
+              writeStrFromFile(file, buildObjectFromStr(array[i]));
+              writeStrFromFile(file, buildObjectFromStr(array[j]));
+              writeStrFromFile(file, "Shrubs - Flowers");
+              break;
+          }
+          break;
+        case "Flowers":
+          switch (array[j].className) {
+            case "Trees":
+              writeStrFromFile(file, buildObjectFromStr(array[i]));
+              writeStrFromFile(file, buildObjectFromStr(array[j]));
+              writeStrFromFile(file, "Flowers - Trees");
+              break;
+            case "Shrubs":
+              writeStrFromFile(file, buildObjectFromStr(array[i]));
+              writeStrFromFile(file, buildObjectFromStr(array[j]));
+              writeStrFromFile(file, "Flowers - Shrubs");
+              break;
+            case "Flowers":
+              writeStrFromFile(file, buildObjectFromStr(array[i]));
+              writeStrFromFile(file, buildObjectFromStr(array[j]));
+              writeStrFromFile(file, "Flowers - Flowers");
               break;
           }
           break;
