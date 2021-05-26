@@ -67,3 +67,13 @@ export function numberLetters(str) {
 
   return count;
 }
+
+export function compare(a, b) {
+  if (a < b) {
+    return -1;
+  }
+  if (a > b) {
+    return 1;
+  }
+  return 0;
+}
